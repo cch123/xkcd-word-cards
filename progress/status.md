@@ -3,8 +3,8 @@
 Updated: 2026-06-20
 
 - Source entries: 4026
-- Generated PNG cards ready in this upload: 512
-- Remaining cards: 3514
+- Generated PNG cards ready in this upload: 521
+- Remaining cards: 3505
 - Current model target: `gpt-image-2`
 - Image size: `1024x1536`
 - Prompt shards: 9
@@ -74,13 +74,13 @@ Started: 2026-06-19
 - `0430-0438`: reassigned to fresh subagent `019ee204-c217-7a30-8074-02f55442daa4` after prior hard blocker
 - `0449-0458`: completed by subagent `019ee145-559e-7de1-acdd-63f1f88e57bb`; `0455-artefact.png` was retried once after a built-in image-generation tool error produced no artifact
 - `0469-0478`: completed by subagent `019ee145-5403-7f13-8873-e3b13e7f032e`
-- `0479-0488`: assigned to subagent `019ee19f-7e58-7371-8e39-7ae25d6afc22`
 - `0489-0498`: completed by subagent `019ee145-5403-7f13-8873-e3b13e7f032e`
 - `0499-0508`: assigned to subagent `019edff7-6120-71c1-9f78-efb303bc3c7d`
 - `0509-0518`: assigned to subagent `019ee145-559e-7de1-acdd-63f1f88e57bb`
-- `0519-0528`: assigned to fresh subagent `019ee22d-aca3-7cd1-8015-c594a54ecfbd`
+- `0519-0528`: completed by fresh subagent `019ee22d-aca3-7cd1-8015-c594a54ecfbd`
 - `0529-0538`: assigned to subagent `019ee145-5403-7f13-8873-e3b13e7f032e`
 - `0549-0558`: assigned to subagent `019ee19f-7e58-7371-8e39-7ae25d6afc22`
+- `0559-0568`: assigned to fresh subagent `019ee243-6cf5-7cd2-82ea-b4dac7a7fae4`
 
 ## Quality Notes
 
@@ -144,6 +144,8 @@ Started: 2026-06-19
 - `0401-cricket.png` has minor example-2 text drift; `0403-competent.png` has minor antonyms-row spelling drift; `0404-consequential.png` has minor example-row text drift; `0405-luxuriant.png` appears to omit the separate phrase row. These passed hard checks and remain quality notes, not regeneration blockers.
 - `0490-contrary.png`, `0492-merchandising.png`, `0495-cavort.png`, and `0496-exuberant.png` have minor handwriting/OCR/text drift. `0497-engross.png` appears to merge the phrase/example-1 area and may omit the circled `1` icon. These passed hard checks and remain quality notes, not regeneration blockers.
 - `0489-0498` were validated as 1024x1536 PNGs with unique hashes and visually verified matching top titles.
+- `0519-0528` were generated, validated as 1024x1536 PNGs with unique hashes, and visually verified matching top titles.
+- Quality notes for `0519-0528`: some cards have minor generated handwriting/OCR drift in small Chinese/header/lower-row text. `0522-literate.png`, `0524-disruption.png`, and `0527-tranquility.png` have visible small-row text simplification or drift. These passed hard checks and remain quality notes, not regeneration blockers.
 
 ## Generated Cards
 
