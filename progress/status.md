@@ -3,8 +3,8 @@
 Updated: 2026-06-20
 
 - Source entries: 4026
-- Generated PNG cards ready in this upload: 483
-- Remaining cards: 3543
+- Generated PNG cards ready in this upload: 490
+- Remaining cards: 3536
 - Current model target: `gpt-image-2`
 - Image size: `1024x1536`
 - Prompt shards: 9
@@ -71,13 +71,12 @@ Started: 2026-06-19
 - `0419-0428`: assigned to subagent `019edff7-b378-7472-9c68-c4c40bd0d50c`
 - `0429-0438`: partially completed by subagent `019ee026-546b-78f0-b4ff-3df1d6525f0c`; `0429-solicitor.png` was generated and validated, but `0430-catering.png` hard-blocked after three consecutive unrelated non-card imagegen outputs, so `0430-0438` were not saved
 - `0430-0438`: reassigned to fresh subagent `019ee204-c217-7a30-8074-02f55442daa4` after prior hard blocker
-- `0439-0448`: assigned to subagent `019ee19f-7e58-7371-8e39-7ae25d6afc22`
-- `0449-0458`: assigned to subagent `019ee145-559e-7de1-acdd-63f1f88e57bb`
-- `0459-0468`: assigned to subagent `019ee19f-7e58-7371-8e39-7ae25d6afc22`
+- `0449-0458`: completed by subagent `019ee145-559e-7de1-acdd-63f1f88e57bb`; `0455-artefact.png` was retried once after a built-in image-generation tool error produced no artifact
 - `0469-0478`: completed by subagent `019ee145-5403-7f13-8873-e3b13e7f032e`
 - `0479-0488`: assigned to subagent `019ee19f-7e58-7371-8e39-7ae25d6afc22`
 - `0489-0498`: assigned to subagent `019ee145-5403-7f13-8873-e3b13e7f032e`
 - `0499-0508`: assigned to subagent `019edff7-6120-71c1-9f78-efb303bc3c7d`
+- `0509-0518`: assigned to subagent `019ee145-559e-7de1-acdd-63f1f88e57bb`
 
 ## Quality Notes
 
@@ -128,7 +127,11 @@ Started: 2026-06-19
 - `0389-0398` were validated as 1024x1536 PNGs with unique hashes and visually verified matching top titles.
 - `0369-precipitation.png` appears to omit the separate phrase row; `0371-albeit.png`, `0376-thorny.png`, and `0377-capsize.png` have minor OCR/text drift. These passed hard checks and remain quality notes, not regeneration blockers.
 - `0369-0378` were validated as 1024x1536 PNGs with unique hashes and visually verified matching top titles.
+- `0449-bemoan.png`, `0451-venue.png`, and `0454-acquaintance.png` appear to omit or misplace the separate phrase row; `0451-venue.png` also has minor example text drift. These passed hard checks and remain quality notes, not regeneration blockers.
+- `0449-0458` were validated as 1024x1536 PNGs with unique hashes and visually verified matching top titles. Grief/sadness and biology imagery in this batch was kept gentle, symbolic, and educational.
 - `0430-catering.png` hard-blocked in subagent `019ee026-546b-78f0-b4ff-3df1d6525f0c`: the built-in imagegen tool returned unrelated non-card outputs three times for the exact JSONL prompt. No bad PNG was saved; only `0429-solicitor.png` was produced for `0429-0438`.
+- `0430-0438` gap recovered in a fresh pass: `0430-catering.png` through `0438-reputable.png` were generated, validated as 1024x1536 PNGs, and checked for unique hashes and matching top titles.
+- Quality notes for `0430-0438`: `0431-dissemination.png`, `0432-spite.png`, `0433-exploitation.png`, `0437-overshadow.png`, and `0438-reputable.png` have minor handwritten/OCR/IPA/Chinese drift; `0434-supersede.png`, `0435-opulence.png`, and `0436-unparalleled.png` appear to omit the separate phrase row. These passed hard checks and remain quality notes, not regeneration blockers.
 - `0401-cricket.png` has minor example-2 text drift; `0403-competent.png` has minor antonyms-row spelling drift; `0404-consequential.png` has minor example-row text drift; `0405-luxuriant.png` appears to omit the separate phrase row. These passed hard checks and remain quality notes, not regeneration blockers.
 
 ## Generated Cards
