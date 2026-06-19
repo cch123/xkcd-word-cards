@@ -25,12 +25,16 @@ Started: 2026-06-19
 - `0101-0110`: completed by subagent `019edff9-0968-7c32-b461-2a9983a94635`
 - `0111-0120`: completed by subagent `019ee026-546b-78f0-b4ff-3df1d6525f0c`
 - `0121-0130`: completed by subagent `019ee026-54dc-7c51-87fe-db67f1ef3255`
-- `0131-0140`: assigned to subagent `019edff7-b378-7472-9c68-c4c40bd0d50c`
-- `0141-0150`: assigned to subagent `019ee026-546b-78f0-b4ff-3df1d6525f0c`
-- `0151-0160`: assigned to subagent `019edff8-0aed-7da1-b160-c4e73e8f1803`
-- `0161-0170`: assigned to subagent `019ee026-54dc-7c51-87fe-db67f1ef3255`
+- `0131-0140`: completed by subagent `019edff7-b378-7472-9c68-c4c40bd0d50c`
+- `0141-0150`: completed by subagent `019ee026-546b-78f0-b4ff-3df1d6525f0c`
+- `0151-0160`: completed by subagent `019edff8-0aed-7da1-b160-c4e73e8f1803`
+- `0161-0170`: completed by subagent `019ee026-54dc-7c51-87fe-db67f1ef3255`; `0165-handicapped.png` has a noted layout issue because the saved candidate omitted the phrase row
 - `0171-0180`: assigned to subagent `019edff7-6120-71c1-9f78-efb303bc3c7d`
 - `0181-0190`: assigned to subagent `019edff9-0968-7c32-b461-2a9983a94635`
+- `0191-0200`: assigned to subagent `019edff7-b378-7472-9c68-c4c40bd0d50c`
+- `0201-0210`: assigned to subagent `019edff8-0aed-7da1-b160-c4e73e8f1803`
+- `0211-0220`: assigned to subagent `019ee026-54dc-7c51-87fe-db67f1ef3255`
+- `0221-0230`: assigned to subagent `019ee026-546b-78f0-b4ff-3df1d6525f0c`
 
 ## Quality Notes
 
@@ -42,6 +46,10 @@ Started: 2026-06-19
 - `0102-timidly.png` was also corrected during the `0101-0110` title audit.
 - `scripts/verify-gpt-image-cards.mjs` now reports duplicate PNG hashes as a quality failure.
 - Subagents were additionally instructed not to run any git commands. Main-agent validation, commits, and pushes should be handled centrally.
+- User instruction update: do not repeatedly regenerate images for layout-only issues. Regenerate only for hard failures: invalid/tiny/wrong-dimension PNG, wrong title/word mismatch, cross-copy, duplicate hash, blank image, or non-card output. Layout/OCR imperfections should be recorded as quality notes instead.
+- `0165-handicapped.png` correction was cancelled as a layout-only retry unless a worker had already produced a replacement before the cancellation.
+- `0165-handicapped.png` latest saved replacement passes hard checks and title-match, but still lacks the phrase row. This remains a quality note, not a regeneration blocker.
+- `0145-spacious.png` may omit the phrase row; `0146-baleful.png` has a minor OCR typo in a phrase. These are quality notes, not regeneration blockers.
 
 ## Generated Cards
 
