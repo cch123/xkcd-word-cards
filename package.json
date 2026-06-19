@@ -1,0 +1,16 @@
+{
+  "name": "xkcd-word-cards",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "plan": "node scripts/build-gpt-image-card-batch.mjs --input data/llm_enrichment.jsonl --out .",
+    "run:codex": "node scripts/run-codex-cli-image-cards.mjs --out .",
+    "run:codex:dry": "node scripts/run-codex-cli-image-cards.mjs --out . --dry-run",
+    "verify": "node scripts/verify-gpt-image-cards.mjs --out .",
+    "check": "node --check scripts/build-gpt-image-card-batch.mjs && node --check scripts/run-codex-cli-image-cards.mjs && node --check scripts/verify-gpt-image-cards.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
