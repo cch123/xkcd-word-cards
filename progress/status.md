@@ -3,8 +3,8 @@
 Updated: 2026-06-20
 
 - Source entries: 4026
-- Generated PNG cards ready in this upload: 468
-- Remaining cards: 3558
+- Generated PNG cards ready in this upload: 472
+- Remaining cards: 3554
 - Current model target: `gpt-image-2`
 - Image size: `1024x1536`
 - Prompt shards: 9
@@ -74,8 +74,9 @@ Started: 2026-06-19
 - `0439-0448`: assigned to subagent `019ee19f-7e58-7371-8e39-7ae25d6afc22`
 - `0449-0458`: assigned to subagent `019ee145-559e-7de1-acdd-63f1f88e57bb`
 - `0459-0468`: assigned to subagent `019ee19f-7e58-7371-8e39-7ae25d6afc22`
-- `0469-0478`: assigned to subagent `019ee145-5403-7f13-8873-e3b13e7f032e`
+- `0469-0478`: completed by subagent `019ee145-5403-7f13-8873-e3b13e7f032e`
 - `0479-0488`: assigned to subagent `019ee19f-7e58-7371-8e39-7ae25d6afc22`
+- `0489-0498`: assigned to subagent `019ee145-5403-7f13-8873-e3b13e7f032e`
 
 ## Quality Notes
 
