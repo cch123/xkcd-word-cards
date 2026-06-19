@@ -3,8 +3,8 @@
 Updated: 2026-06-20
 
 - Source entries: 4026
-- Generated PNG cards ready in this upload: 490
-- Remaining cards: 3536
+- Generated PNG cards ready in this upload: 495
+- Remaining cards: 3531
 - Current model target: `gpt-image-2`
 - Image size: `1024x1536`
 - Prompt shards: 9
@@ -68,7 +68,7 @@ Started: 2026-06-19
 - `0459-0468`: completed by subagent `019ee19f-7e58-7371-8e39-7ae25d6afc22`
 - `0389-0398`: completed by subagent `019ee145-559e-7de1-acdd-63f1f88e57bb`
 - `0399-0408`: completed by subagent `019edff7-6120-71c1-9f78-efb303bc3c7d`; minor text/row drift is noted below and is not a regeneration blocker
-- `0419-0428`: assigned to subagent `019edff7-b378-7472-9c68-c4c40bd0d50c`
+- `0419-0428`: completed by subagent `019edff7-b378-7472-9c68-c4c40bd0d50c`; `0421-disillusionment.png` required one hard-failure retry after the exact prompt was rejected before producing an artifact
 - `0429-0438`: partially completed by subagent `019ee026-546b-78f0-b4ff-3df1d6525f0c`; `0429-solicitor.png` was generated and validated, but `0430-catering.png` hard-blocked after three consecutive unrelated non-card imagegen outputs, so `0430-0438` were not saved
 - `0430-0438`: reassigned to fresh subagent `019ee204-c217-7a30-8074-02f55442daa4` after prior hard blocker
 - `0449-0458`: completed by subagent `019ee145-559e-7de1-acdd-63f1f88e57bb`; `0455-artefact.png` was retried once after a built-in image-generation tool error produced no artifact
@@ -77,6 +77,7 @@ Started: 2026-06-19
 - `0489-0498`: assigned to subagent `019ee145-5403-7f13-8873-e3b13e7f032e`
 - `0499-0508`: assigned to subagent `019edff7-6120-71c1-9f78-efb303bc3c7d`
 - `0509-0518`: assigned to subagent `019ee145-559e-7de1-acdd-63f1f88e57bb`
+- `0519-0528`: assigned to fresh subagent `019ee22d-aca3-7cd1-8015-c594a54ecfbd`
 
 ## Quality Notes
 
@@ -103,6 +104,7 @@ Started: 2026-06-19
 - `0269-drill.png` is missing the phrase row. This is a quality note, not a regeneration blocker.
 - `0301-elucidate.png`, `0302-colourable.png`, `0304-implausible.png`, and `0305-plausibility.png` have minor comic-clue/text artifacts. These are quality notes, not regeneration blockers.
 - `0353-dizzy.png` and `0354-giddy.png` have minor Chinese text drift; `0355-autoimmune.png` has example-2 English text drift; `0357-oddly.png` has an incorrect-looking IPA line; `0358-douche.png` uses more anatomical/medical visual detail than ideal; `0359-redden.png` has minor Chinese text drift. These passed hard checks and are quality notes, not regeneration blockers.
+- `0420-stockpile.png` has minor Chinese header text drift; `0421-disillusionment.png` has a comic-clue text artifact after a hard-failure retry; `0422-attrition.png` appears to omit the phrase row; `0428-scamper.png` has wrong roots-panel text from another word. These passed hard checks and are quality notes, not regeneration blockers.
 - `0334-taunt.png` has minor handwritten text/OCR imperfections; `0336-victimise.png` has phrase/example text drift; `0337-extravagance.png` has usage-row text drift; `0340-retrenchment.png` has right-roots-panel text drift. These passed hard checks and remain quality notes, not regeneration blockers.
 - `0341-0350` passed hard checks and title-match verification. Minor generated text/roots/IPA drift is visible on some cards, especially `0342-entice.png`, `0346-astound.png`, and `0349-aggressiveness.png`; these are quality notes, not regeneration blockers.
 - `0325-plagiarise.png` replacement passes hard checks after the first candidate was rejected for obvious cross-word example contamination; the saved replacement still has minor Chinese handwriting/OCR drift, which is a quality note, not a regeneration blocker.
@@ -131,6 +133,7 @@ Started: 2026-06-19
 - `0449-0458` were validated as 1024x1536 PNGs with unique hashes and visually verified matching top titles. Grief/sadness and biology imagery in this batch was kept gentle, symbolic, and educational.
 - `0430-catering.png` hard-blocked in subagent `019ee026-546b-78f0-b4ff-3df1d6525f0c`: the built-in imagegen tool returned unrelated non-card outputs three times for the exact JSONL prompt. No bad PNG was saved; only `0429-solicitor.png` was produced for `0429-0438`.
 - `0430-0438` gap recovered in a fresh pass: `0430-catering.png` through `0438-reputable.png` were generated, validated as 1024x1536 PNGs, and checked for unique hashes and matching top titles.
+- `npm run verify` after the `0430-0438` recovery reported `valid: 490`, `missing: 3536`, `invalid: 0`, `extra: 0`, `duplicateHashes: 0`; it still exits nonzero because unrelated cards remain missing.
 - Quality notes for `0430-0438`: `0431-dissemination.png`, `0432-spite.png`, `0433-exploitation.png`, `0437-overshadow.png`, and `0438-reputable.png` have minor handwritten/OCR/IPA/Chinese drift; `0434-supersede.png`, `0435-opulence.png`, and `0436-unparalleled.png` appear to omit the separate phrase row. These passed hard checks and remain quality notes, not regeneration blockers.
 - `0401-cricket.png` has minor example-2 text drift; `0403-competent.png` has minor antonyms-row spelling drift; `0404-consequential.png` has minor example-row text drift; `0405-luxuriant.png` appears to omit the separate phrase row. These passed hard checks and remain quality notes, not regeneration blockers.
 
