@@ -3,8 +3,8 @@
 Updated: 2026-06-20
 
 - Source entries: 4026
-- Generated PNG cards ready in this upload: 382
-- Remaining cards: 3644
+- Generated PNG cards ready in this upload: 384
+- Remaining cards: 3642
 - Current model target: `gpt-image-2`
 - Image size: `1024x1536`
 - Prompt shards: 9
@@ -59,12 +59,13 @@ Started: 2026-06-19
 - `0321-0330`: completed by subagent `019ee145-5403-7f13-8873-e3b13e7f032e`; `0325-plagiarise.png` was regenerated once because the first saved candidate had obvious cross-word example text
 - `0331-0340`: completed by subagent `019edff7-6120-71c1-9f78-efb303bc3c7d`; minor text drift/OCR artifacts are noted below and are not regeneration blockers
 - `0341-0350`: completed by subagent `019ee145-559e-7de1-acdd-63f1f88e57bb`
-- `0351-0360`: assigned to subagent `019edff7-b378-7472-9c68-c4c40bd0d50c`
+- `0351-0360`: completed by subagent `019edff7-b378-7472-9c68-c4c40bd0d50c`
 - `0278-0279` plus corrected `0361-0368`: completed by fresh subagent `019ee19f-7e58-7371-8e39-7ae25d6afc22`
 - `0369-0378`: assigned to subagent `019ee145-5403-7f13-8873-e3b13e7f032e`
-- `0379-0388`: assigned to subagent `019ee19f-7e58-7371-8e39-7ae25d6afc22`
+- `0379-0388`: completed by subagent `019ee19f-7e58-7371-8e39-7ae25d6afc22`
 - `0389-0398`: assigned to subagent `019ee145-559e-7de1-acdd-63f1f88e57bb`
 - `0399-0408`: assigned to subagent `019edff7-6120-71c1-9f78-efb303bc3c7d`
+- `0409-0418`: assigned to subagent `019ee19f-7e58-7371-8e39-7ae25d6afc22`
 
 ## Quality Notes
 
@@ -90,12 +91,15 @@ Started: 2026-06-19
 - `0243-verbatim.png` appears to omit the phrase row; `0244-disruptive.png` has a shifted/wrong phrase-row icon; `0247-caustic.png` has minor lower-row OCR/text errors. These are quality notes, not regeneration blockers.
 - `0269-drill.png` is missing the phrase row. This is a quality note, not a regeneration blocker.
 - `0301-elucidate.png`, `0302-colourable.png`, `0304-implausible.png`, and `0305-plausibility.png` have minor comic-clue/text artifacts. These are quality notes, not regeneration blockers.
+- `0353-dizzy.png` and `0354-giddy.png` have minor Chinese text drift; `0355-autoimmune.png` has example-2 English text drift; `0357-oddly.png` has an incorrect-looking IPA line; `0358-douche.png` uses more anatomical/medical visual detail than ideal; `0359-redden.png` has minor Chinese text drift. These passed hard checks and are quality notes, not regeneration blockers.
 - `0334-taunt.png` has minor handwritten text/OCR imperfections; `0336-victimise.png` has phrase/example text drift; `0337-extravagance.png` has usage-row text drift; `0340-retrenchment.png` has right-roots-panel text drift. These passed hard checks and remain quality notes, not regeneration blockers.
 - `0341-0350` passed hard checks and title-match verification. Minor generated text/roots/IPA drift is visible on some cards, especially `0342-entice.png`, `0346-astound.png`, and `0349-aggressiveness.png`; these are quality notes, not regeneration blockers.
 - `0325-plagiarise.png` replacement passes hard checks after the first candidate was rejected for obvious cross-word example contamination; the saved replacement still has minor Chinese handwriting/OCR drift, which is a quality note, not a regeneration blocker.
 - `0362-intermix.png` has minor handwriting/OCR drift in the synonyms label, but the title, examples, and card layout pass hard checks.
 - `0365-afflicting.png`, `0366-shorten.png`, and `0367-credibility.png` have minor text/IPA/OCR drift in lower rows. These are quality notes, not regeneration blockers.
 - `0278-0279` plus corrected `0361-0368` were validated as 1024x1536 PNGs with unique hashes; `npm run verify` still exits nonzero because unrelated cards remain missing.
+- `0379-archetype.png`, `0380-nutritional.png`, `0384-obsessional.png`, `0386-revegetate.png`, `0387-organ.png`, and `0388-nasty.png` have minor handwriting/OCR drift in small labels or lower-row text. These are quality notes, not regeneration blockers.
+- `0379-0388` were validated as 1024x1536 PNGs with unique hashes; `npm run verify` still exits nonzero because unrelated cards remain missing.
 
 ## Generated Cards
 
