@@ -3,8 +3,8 @@
 Updated: 2026-06-20
 
 - Source entries: 4026
-- Generated PNG cards ready in this upload: 458
-- Remaining cards: 3568
+- Generated PNG cards ready in this upload: 468
+- Remaining cards: 3558
 - Current model target: `gpt-image-2`
 - Image size: `1024x1536`
 - Prompt shards: 9
@@ -65,6 +65,7 @@ Started: 2026-06-19
 - `0379-0388`: completed by subagent `019ee19f-7e58-7371-8e39-7ae25d6afc22`
 - `0409-0418`: completed by subagent `019ee19f-7e58-7371-8e39-7ae25d6afc22`
 - `0439-0448`: completed by subagent `019ee19f-7e58-7371-8e39-7ae25d6afc22`
+- `0459-0468`: completed by subagent `019ee19f-7e58-7371-8e39-7ae25d6afc22`
 - `0389-0398`: completed by subagent `019ee145-559e-7de1-acdd-63f1f88e57bb`
 - `0399-0408`: assigned to subagent `019edff7-6120-71c1-9f78-efb303bc3c7d`
 - `0419-0428`: assigned to subagent `019edff7-b378-7472-9c68-c4c40bd0d50c`
@@ -74,6 +75,7 @@ Started: 2026-06-19
 - `0449-0458`: assigned to subagent `019ee145-559e-7de1-acdd-63f1f88e57bb`
 - `0459-0468`: assigned to subagent `019ee19f-7e58-7371-8e39-7ae25d6afc22`
 - `0469-0478`: assigned to subagent `019ee145-5403-7f13-8873-e3b13e7f032e`
+- `0479-0488`: assigned to subagent `019ee19f-7e58-7371-8e39-7ae25d6afc22`
 
 ## Quality Notes
 
@@ -116,6 +118,8 @@ Started: 2026-06-19
 - `0445-alley.png` was regenerated once because the first candidate had a wrong large-title spelling; the saved replacement has the correct `alley` title and passes hard checks.
 - `0447-suicidal.png` uses only safe symbolic crisis-prevention/support and icy-road warning imagery, with no self-harm methods, injury, death, gore, weapons, or instructions.
 - `0439-0448` were validated as 1024x1536 PNGs with unique hashes; `npm run verify` still exits nonzero because unrelated cards remain missing.
+- `0462-elicitation.png`, `0463-introspection.png`, `0464-disintegration.png`, `0466-halve.png`, and `0468-overlie.png` have minor handwriting/OCR drift in small labels, header details, or lower-row text. These are quality notes, not regeneration blockers.
+- `0459-0468` were validated as 1024x1536 PNGs with unique hashes; `npm run verify` still exits nonzero because unrelated cards remain missing.
 - `0317-malevolent.png` is missing the phrase row; `0318-benevolence.png` has a minor example-1 English line-break/text split. These passed hard checks and remain quality notes, not regeneration blockers.
 - `0311-0320` were validated as 1024x1536 PNGs with unique hashes.
 - `0393-legislator.png`, `0394-dredger.png`, and `0396-devastating.png` appear to omit the separate phrase row. Some `0389-0398` cards have minor generated handwriting/OCR/IPA drift. These passed hard checks and remain quality notes, not regeneration blockers.
