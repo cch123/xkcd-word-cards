@@ -3,8 +3,8 @@
 Updated: 2026-06-20
 
 - Source entries: 4026
-- Generated PNG cards ready in this upload: 351
-- Remaining cards: 3675
+- Generated PNG cards ready in this upload: 360
+- Remaining cards: 3666
 - Current model target: `gpt-image-2`
 - Image size: `1024x1536`
 - Prompt shards: 9
@@ -39,7 +39,7 @@ Started: 2026-06-19
 - `0241-0250`: failed in subagent `019edff9-0968-7c32-b461-2a9983a94635`; built-in image generation returned unrelated non-card/cross-task images, so no bad PNGs were saved
 - `0251-0260`: completed by subagent `019edff7-6120-71c1-9f78-efb303bc3c7d`
 - `0261-0270`: failed in subagent `019edff9-0968-7c32-b461-2a9983a94635`; built-in image generation returned unrelated cross-task/non-card outputs, so no bad PNGs were saved
-- `0271-0280`: completed except `0278-0279`; `0275-0277` have since been recovered, while `0278-0279` remain assigned to a fresh worker
+- `0271-0280`: completed; `0275-0277` and `0278-0279` were recovered by fresh workers after earlier hard failures
 - `0281-0290`: completed by fresh subagent `019ee145-559e-7de1-acdd-63f1f88e57bb` after a prior failed worker returned unrelated non-card/wrong-title outputs
 
 ## Paused Subagents
@@ -60,8 +60,9 @@ Started: 2026-06-19
 - `0331-0340`: assigned to subagent `019edff7-6120-71c1-9f78-efb303bc3c7d`
 - `0341-0350`: assigned to subagent `019ee145-559e-7de1-acdd-63f1f88e57bb`
 - `0351-0360`: assigned to subagent `019edff7-b378-7472-9c68-c4c40bd0d50c`
-- `0278-0279` plus `0361-0368`: assigned to fresh subagent `019ee19f-7e58-7371-8e39-7ae25d6afc22`
+- `0278-0279` plus corrected `0361-0368`: completed by fresh subagent `019ee19f-7e58-7371-8e39-7ae25d6afc22`
 - `0369-0378`: assigned to subagent `019ee145-5403-7f13-8873-e3b13e7f032e`
+- `0379-0388`: assigned to subagent `019ee19f-7e58-7371-8e39-7ae25d6afc22`
 
 ## Quality Notes
 
@@ -88,6 +89,9 @@ Started: 2026-06-19
 - `0269-drill.png` is missing the phrase row. This is a quality note, not a regeneration blocker.
 - `0301-elucidate.png`, `0302-colourable.png`, `0304-implausible.png`, and `0305-plausibility.png` have minor comic-clue/text artifacts. These are quality notes, not regeneration blockers.
 - `0325-plagiarise.png` replacement passes hard checks after the first candidate was rejected for obvious cross-word example contamination; the saved replacement still has minor Chinese handwriting/OCR drift, which is a quality note, not a regeneration blocker.
+- `0362-intermix.png` has minor handwriting/OCR drift in the synonyms label, but the title, examples, and card layout pass hard checks.
+- `0365-afflicting.png`, `0366-shorten.png`, and `0367-credibility.png` have minor text/IPA/OCR drift in lower rows. These are quality notes, not regeneration blockers.
+- `0278-0279` plus corrected `0361-0368` were validated as 1024x1536 PNGs with unique hashes; `npm run verify` still exits nonzero because unrelated cards remain missing.
 
 ## Generated Cards
 
