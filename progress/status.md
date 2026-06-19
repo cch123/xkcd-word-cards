@@ -3,8 +3,8 @@
 Updated: 2026-06-20
 
 - Source entries: 4026
-- Generated PNG cards ready in this upload: 409
-- Remaining cards: 3617
+- Generated PNG cards ready in this upload: 415
+- Remaining cards: 3611
 - Current model target: `gpt-image-2`
 - Image size: `1024x1536`
 - Prompt shards: 9
@@ -64,11 +64,12 @@ Started: 2026-06-19
 - `0369-0378`: assigned to subagent `019ee145-5403-7f13-8873-e3b13e7f032e`
 - `0379-0388`: completed by subagent `019ee19f-7e58-7371-8e39-7ae25d6afc22`
 - `0409-0418`: completed by subagent `019ee19f-7e58-7371-8e39-7ae25d6afc22`
-- `0389-0398`: assigned to subagent `019ee145-559e-7de1-acdd-63f1f88e57bb`
+- `0389-0398`: completed by subagent `019ee145-559e-7de1-acdd-63f1f88e57bb`
 - `0399-0408`: assigned to subagent `019edff7-6120-71c1-9f78-efb303bc3c7d`
 - `0419-0428`: assigned to subagent `019edff7-b378-7472-9c68-c4c40bd0d50c`
 - `0429-0438`: assigned to subagent `019ee026-546b-78f0-b4ff-3df1d6525f0c`
 - `0439-0448`: assigned to subagent `019ee19f-7e58-7371-8e39-7ae25d6afc22`
+- `0449-0458`: assigned to subagent `019ee145-559e-7de1-acdd-63f1f88e57bb`
 
 ## Quality Notes
 
@@ -109,6 +110,8 @@ Started: 2026-06-19
 - `0409-0418` were validated as 1024x1536 PNGs with unique hashes; `npm run verify` still exits nonzero because unrelated cards remain missing.
 - `0317-malevolent.png` is missing the phrase row; `0318-benevolence.png` has a minor example-1 English line-break/text split. These passed hard checks and remain quality notes, not regeneration blockers.
 - `0311-0320` were validated as 1024x1536 PNGs with unique hashes.
+- `0393-legislator.png`, `0394-dredger.png`, and `0396-devastating.png` appear to omit the separate phrase row. Some `0389-0398` cards have minor generated handwriting/OCR/IPA drift. These passed hard checks and remain quality notes, not regeneration blockers.
+- `0389-0398` were validated as 1024x1536 PNGs with unique hashes and visually verified matching top titles.
 
 ## Generated Cards
 
