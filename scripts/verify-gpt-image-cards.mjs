@@ -1,4 +1,5 @@
 import { readdir, readFile, stat } from "node:fs/promises";
+import { createHash } from "node:crypto";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -21,6 +22,7 @@ const actualRelFiles = new Set(actualFiles.map((file) => path.posix.join("cards"
 
 const missing = [];
 const invalid = [];
+const hashes = new Map();
 let valid = 0;
 
 for (const card of manifest.cards) {
@@ -43,6 +45,8 @@ for (const card of manifest.cards) {
       invalid.push({ file: card.file, reason: `suspiciously small PNG: ${info.bytes} bytes` });
       continue;
     }
+    if (!hashes.has(info.sha256)) hashes.set(info.sha256, []);
+    hashes.get(info.sha256).push(card.file);
     valid += 1;
   } catch (error) {
     invalid.push({ file: card.file, reason: error.message });
@@ -50,12 +54,16 @@ for (const card of manifest.cards) {
 }
 
 const extra = [...actualRelFiles].filter((file) => !planned.has(file));
+const duplicateHashes = [...hashes.entries()]
+  .filter(([, files]) => files.length > 1)
+  .map(([sha256, files]) => ({ sha256, files }));
 const summary = {
   expected: manifest.cards.length,
   valid,
   missing: missing.length,
   invalid: invalid.length,
-  extra: extra.length
+  extra: extra.length,
+  duplicateHashes: duplicateHashes.length
 };
 
 console.log(JSON.stringify(summary, null, 2));
@@ -69,8 +77,11 @@ if (invalid.length) {
 if (extra.length) {
   console.log(`First extra: ${extra.slice(0, 10).join(", ")}`);
 }
+if (duplicateHashes.length) {
+  console.log(`First duplicate hashes: ${duplicateHashes.slice(0, 10).map((item) => `${item.sha256} (${item.files.join(", ")})`).join("; ")}`);
+}
 
-if (summary.valid !== summary.expected || summary.missing || summary.invalid || summary.extra) {
+if (summary.valid !== summary.expected || summary.missing || summary.invalid || summary.extra || summary.duplicateHashes) {
   process.exitCode = 1;
 }
 
@@ -98,7 +109,8 @@ async function inspectPng(file) {
   return {
     bytes: fileStat.size,
     width: buffer.readUInt32BE(16),
-    height: buffer.readUInt32BE(20)
+    height: buffer.readUInt32BE(20),
+    sha256: createHash("sha256").update(buffer).digest("hex")
   };
 }
 
