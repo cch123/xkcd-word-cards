@@ -3,8 +3,8 @@
 Updated: 2026-06-20
 
 - Source entries: 4026
-- Generated PNG cards ready in this upload: 390
-- Remaining cards: 3636
+- Generated PNG cards ready in this upload: 400
+- Remaining cards: 3626
 - Current model target: `gpt-image-2`
 - Image size: `1024x1536`
 - Prompt shards: 9
@@ -55,7 +55,7 @@ Started: 2026-06-19
 - `0281-0290`: reassigned to fresh subagent `019ee145-559e-7de1-acdd-63f1f88e57bb`
 - `0291-0300`: completed by subagent `019edff7-6120-71c1-9f78-efb303bc3c7d`
 - `0301-0310`: completed by subagent `019edff7-b378-7472-9c68-c4c40bd0d50c`
-- `0311-0320`: assigned to subagent `019ee026-546b-78f0-b4ff-3df1d6525f0c`
+- `0311-0320`: completed by subagent `019ee026-546b-78f0-b4ff-3df1d6525f0c`; `0317-malevolent.png` was regenerated once because the first candidate had obvious cross-word comic-clue contamination
 - `0321-0330`: completed by subagent `019ee145-5403-7f13-8873-e3b13e7f032e`; `0325-plagiarise.png` was regenerated once because the first saved candidate had obvious cross-word example text
 - `0331-0340`: completed by subagent `019edff7-6120-71c1-9f78-efb303bc3c7d`; minor text drift/OCR artifacts are noted below and are not regeneration blockers
 - `0341-0350`: completed by subagent `019ee145-559e-7de1-acdd-63f1f88e57bb`
@@ -67,6 +67,7 @@ Started: 2026-06-19
 - `0399-0408`: assigned to subagent `019edff7-6120-71c1-9f78-efb303bc3c7d`
 - `0409-0418`: assigned to subagent `019ee19f-7e58-7371-8e39-7ae25d6afc22`
 - `0419-0428`: assigned to subagent `019edff7-b378-7472-9c68-c4c40bd0d50c`
+- `0429-0438`: assigned to subagent `019ee026-546b-78f0-b4ff-3df1d6525f0c`
 
 ## Quality Notes
 
@@ -101,6 +102,8 @@ Started: 2026-06-19
 - `0278-0279` plus corrected `0361-0368` were validated as 1024x1536 PNGs with unique hashes; `npm run verify` still exits nonzero because unrelated cards remain missing.
 - `0379-archetype.png`, `0380-nutritional.png`, `0384-obsessional.png`, `0386-revegetate.png`, `0387-organ.png`, and `0388-nasty.png` have minor handwriting/OCR drift in small labels or lower-row text. These are quality notes, not regeneration blockers.
 - `0379-0388` were validated as 1024x1536 PNGs with unique hashes; `npm run verify` still exits nonzero because unrelated cards remain missing.
+- `0317-malevolent.png` is missing the phrase row; `0318-benevolence.png` has a minor example-1 English line-break/text split. These passed hard checks and remain quality notes, not regeneration blockers.
+- `0311-0320` were validated as 1024x1536 PNGs with unique hashes.
 
 ## Generated Cards
 
