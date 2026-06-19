@@ -1,10 +1,10 @@
 # Generation Status
 
-Updated: 2026-06-19
+Updated: 2026-06-20
 
 - Source entries: 4026
-- Generated PNG cards ready in this upload: 340
-- Remaining cards: 3686
+- Generated PNG cards ready in this upload: 351
+- Remaining cards: 3675
 - Current model target: `gpt-image-2`
 - Image size: `1024x1536`
 - Prompt shards: 9
@@ -56,11 +56,12 @@ Started: 2026-06-19
 - `0291-0300`: completed by subagent `019edff7-6120-71c1-9f78-efb303bc3c7d`
 - `0301-0310`: completed by subagent `019edff7-b378-7472-9c68-c4c40bd0d50c`
 - `0311-0320`: assigned to subagent `019ee026-546b-78f0-b4ff-3df1d6525f0c`
-- `0321-0330`: assigned to subagent `019ee145-5403-7f13-8873-e3b13e7f032e`
+- `0321-0330`: completed by subagent `019ee145-5403-7f13-8873-e3b13e7f032e`; `0325-plagiarise.png` was regenerated once because the first saved candidate had obvious cross-word example text
 - `0331-0340`: assigned to subagent `019edff7-6120-71c1-9f78-efb303bc3c7d`
 - `0341-0350`: assigned to subagent `019ee145-559e-7de1-acdd-63f1f88e57bb`
 - `0351-0360`: assigned to subagent `019edff7-b378-7472-9c68-c4c40bd0d50c`
 - `0278-0279` plus `0361-0368`: assigned to fresh subagent `019ee19f-7e58-7371-8e39-7ae25d6afc22`
+- `0369-0378`: assigned to subagent `019ee145-5403-7f13-8873-e3b13e7f032e`
 
 ## Quality Notes
 
@@ -86,6 +87,7 @@ Started: 2026-06-19
 - `0243-verbatim.png` appears to omit the phrase row; `0244-disruptive.png` has a shifted/wrong phrase-row icon; `0247-caustic.png` has minor lower-row OCR/text errors. These are quality notes, not regeneration blockers.
 - `0269-drill.png` is missing the phrase row. This is a quality note, not a regeneration blocker.
 - `0301-elucidate.png`, `0302-colourable.png`, `0304-implausible.png`, and `0305-plausibility.png` have minor comic-clue/text artifacts. These are quality notes, not regeneration blockers.
+- `0325-plagiarise.png` replacement passes hard checks after the first candidate was rejected for obvious cross-word example contamination; the saved replacement still has minor Chinese handwriting/OCR drift, which is a quality note, not a regeneration blocker.
 
 ## Generated Cards
 
