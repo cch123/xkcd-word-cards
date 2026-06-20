@@ -3,8 +3,8 @@
 Updated: 2026-06-20
 
 - Source entries: 4026
-- Generated PNG cards ready in this upload: 737
-- Remaining cards: 3289
+- Generated PNG cards ready in this upload: 757
+- Remaining cards: 3269
 - Current model target: `gpt-image-2`
 - Image size: `1024x1536`
 - Prompt shards: 9
@@ -99,6 +99,12 @@ Started: 2026-06-19
 - `0709-0718`: completed with built-in image generation in subagent `019ee337-8887-7430-8e57-0c29dd888993`; validated as 1024x1536 PNGs with unique batch hashes, checked against `cards/*.png` for duplicate hashes, and visually verified matching top titles
 - `0719-0728`: completed with built-in image generation in subagent `019ee337-88fb-7fa0-9d45-bd1bb78f87bb`; validated as 1024x1536 PNGs with unique batch hashes, checked against `cards/*.png` for duplicate hashes, and visually verified matching top titles
 - `0729-0738`: completed with built-in image generation in subagent `019ee337-8979-7fc0-832c-e9a91f53a894`; validated as 1024x1536 PNGs with unique batch hashes, checked against `cards/*.png` for duplicate hashes, and visually verified matching top titles
+- `0739-0748`: assigned to fresh subagent `019ee366-0255-7ba3-bf48-d4a72f903e1b`
+- `0749-0758`: assigned to fresh subagent `019ee366-02bc-76e1-8187-e97d5b92d63b`
+- `0759-0768`: assigned to fresh subagent `019ee366-0325-7783-abc6-8fd924e13293`
+- `0769-0778`: assigned to fresh subagent `019ee366-038e-73a0-9758-0e96b2a8dc1a`
+- `0779-0788`: assigned to fresh subagent `019ee366-0405-7cb1-8026-1d60073d677c`
+- `0789-0798`: assigned to fresh subagent `019ee366-047c-7653-8835-66ce8baf7e17`
 
 ## Quality Notes
 
