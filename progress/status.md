@@ -3,8 +3,8 @@
 Updated: 2026-06-20
 
 - Source entries: 4026
-- Generated PNG cards ready in this upload: 602
-- Remaining cards: 3424
+- Generated PNG cards ready in this upload: 614
+- Remaining cards: 3412
 - Current model target: `gpt-image-2`
 - Image size: `1024x1536`
 - Prompt shards: 9
@@ -84,11 +84,12 @@ Started: 2026-06-19
 - `0559-0568`: completed by fresh subagent `019ee243-6cf5-7cd2-82ea-b4dac7a7fae4`
 - `0569-0578`: completed by fresh subagent `019ee25a-d8c0-7460-83d8-4d06f52ab9db`
 - `0579-0588`: completed in the current pass with built-in image generation
-- `0589-0598`: assigned to fresh subagent `019ee264-3109-7dd2-a31e-445f1d02dc4d`
+- `0589-0598`: completed in this pass; generated, validated as 1024x1536 PNGs with unique hashes, checked against `cards/*.png` for duplicate hashes, and visually verified matching top titles
 - `0599-0608`: assigned to fresh subagent `019ee276-11f1-7020-91a6-ac92d58a8d13`
 - `0609-0618`: assigned to fresh subagent `019ee278-8a02-7323-862f-764e04ba4fde`
 - `0619-0628`: assigned to fresh subagent `019ee279-c750-7262-890b-a53f2a71c653`
 - `0629-0638`: assigned to fresh subagent `019ee27c-6bfc-7e83-b579-56299d2f04a9`
+- `0639-0648`: assigned to fresh subagent `019ee27e-d67d-7d81-94ca-37d126b3c1bc`
 
 ## Quality Notes
 
@@ -168,6 +169,7 @@ Started: 2026-06-19
 - `0559-0568` were generated, validated as 1024x1536 PNGs with unique hashes, and visually verified matching top titles.
 - Quality notes for `0559-0568`: several cards have minor generated handwriting/OCR/IPA or Chinese text drift in small rows/header details, especially `0562-irritating.png`, `0565-derelict.png`, `0566-demolition.png`, and `0568-pamper.png`. These passed hard checks and remain quality notes, not regeneration blockers.
 - `0559-motionless.png` was regenerated once because the first built-in image output was `864x1821`; the saved replacement is `1024x1536`.
+- Quality notes for `0589-0598`: `0590-laterality.png` has minor small-row handwriting/OCR drift around `handedness`; `0591-hallowed.png` has a phrase-row typo reading like `hallowed around` instead of `hallowed ground`. These passed hard checks and remain quality notes, not regeneration blockers. `0593-eruption.png` and `0595-toxicity.png` use safe symbolic/educational imagery.
 - `0569-0578` were generated with built-in image generation, validated as 1024x1536 PNGs with unique hashes, checked against `cards/*.png` for duplicate hashes, and visually verified matching top titles.
 - Quality notes for `0569-0578`: several cards have minor generated handwriting/OCR/IPA or Chinese text drift in small text, especially `0569-promising.png`, `0571-crockery.png`, `0574-opulent.png`, `0575-dispiriting.png`, and `0577-salinity.png`; `0578-skim.png` has minor roots side-panel drift. These passed hard checks and remain quality notes, not regeneration blockers.
 - `0579-0588` were generated, validated as 1024x1536 PNGs with unique hashes, checked against `cards/*.png` for duplicate hashes, and visually verified matching top titles.
