@@ -3,8 +3,8 @@
 Updated: 2026-06-20
 
 - Source entries: 4026
-- Generated PNG cards ready in this upload: 733
-- Remaining cards: 3293
+- Generated PNG cards ready in this upload: 737
+- Remaining cards: 3289
 - Current model target: `gpt-image-2`
 - Image size: `1024x1536`
 - Prompt shards: 9
@@ -93,13 +93,12 @@ Started: 2026-06-19
 - `0649-0658`: completed with built-in image generation; validated as 1024x1536 PNGs with unique hashes, no `cards/*.png` duplicate hashes, and visually verified matching top titles
 - `0659-0668`: completed in this pass with built-in image generation; validated as 1024x1536 PNGs with unique hashes, checked against `cards/*.png` for duplicate hashes, and visually verified matching top titles
 - `0669-0678`: completed with built-in image generation; validated as 1024x1536 PNGs with unique hashes, checked against `cards/*.png` for duplicate hashes, and visually verified matching top titles
-- `0679-0688`: partially completed by subagent `019ee337-8702-7681-a3ab-ce33e2e1b2f6`; `0679-0681` are generated and `0681-maneuver.png` was fixed after a wrong-dimension hard failure
-- `0682-0688`: recovery generation assigned to fresh subagent `019ee34f-302f-7061-bd84-f4ad6f285597`
+- `0679-0688`: completed after gap recovery; `0679-0681` were generated earlier and `0681-maneuver.png` was fixed after a wrong-dimension hard failure, while `0682-0688` were generated with built-in image generation in subagent `019ee34f-302f-7061-bd84-f4ad6f285597`; the recovered gap files were validated as non-tiny `1024x1536` PNGs with unique batch hashes, no `cards/*.png` duplicate hashes, and matching top titles
 - `0689-0698`: assigned to fresh subagent `019ee337-876c-7073-a8a2-3e8e134e8cf1`
 - `0699-0708`: completed with built-in image generation in subagent `019ee337-8800-7f72-ad38-32aafd2948de`; validated as non-tiny 1024x1536 PNGs with unique batch hashes, checked against `cards/*.png` for duplicate hashes, and visually verified matching top titles
 - `0709-0718`: completed with built-in image generation in subagent `019ee337-8887-7430-8e57-0c29dd888993`; validated as 1024x1536 PNGs with unique batch hashes, checked against `cards/*.png` for duplicate hashes, and visually verified matching top titles
 - `0719-0728`: completed with built-in image generation in subagent `019ee337-88fb-7fa0-9d45-bd1bb78f87bb`; validated as 1024x1536 PNGs with unique batch hashes, checked against `cards/*.png` for duplicate hashes, and visually verified matching top titles
-- `0729-0738`: assigned to fresh subagent `019ee337-8979-7fc0-832c-e9a91f53a894`
+- `0729-0738`: completed with built-in image generation in subagent `019ee337-8979-7fc0-832c-e9a91f53a894`; validated as 1024x1536 PNGs with unique batch hashes, checked against `cards/*.png` for duplicate hashes, and visually verified matching top titles
 
 ## Quality Notes
 
@@ -196,6 +195,8 @@ Started: 2026-06-19
 - Quality notes for `0609-0618`: `0610-niggle.png`, `0611-discerning.png`, `0612-fallow.png`, `0613-settlement.png`, and `0616-embezzlement.png` have minor generated handwriting/OCR/IPA or Chinese drift in small text; `0615-acrobatic.png` and `0617-unquote.png` omit or shift the separate phrase row. `0616-embezzlement.png` uses educational office/audit/legal imagery only. These passed hard checks and remain quality notes, not regeneration blockers.
 - Quality notes for `0659-0668`: several cards have minor generated handwriting/OCR/IPA or Chinese drift in small text, especially `0660-knotty.png`, `0663-depletion.png`, `0664-vitality.png`, `0665-toxin.png`, `0666-tome.png`, and `0667-cloakroom.png`. `0662-splint.png` and `0668-vet.png` use neutral non-graphic medical/animal-clinic imagery; `0665-toxin.png` uses educational warning-label/lab-symbol imagery only. These passed hard checks and remain quality notes, not regeneration blockers.
 - Quality notes for `0669-0678`: `0673-identifiable.png` and `0675-fertilise.png` have minor generated IPA/Chinese/roots handwriting/OCR drift in small text; `0678-coarse.png` appears to omit the separate phrase row. These passed hard checks and remain quality notes, not regeneration blockers.
+- Quality notes for `0682-0688`: `0684-lexicographer.png` omits/merges the separate phrase row and lacks the circled `1` example icon; `0682-manipulate.png`, `0683-lexicographical.png`, and `0687-audacious.png` have minor generated handwriting/OCR/Chinese/IPA drift in small text. These passed hard checks and remain quality notes, not regeneration blockers.
+- Quality notes for `0729-0738`: `0730-plagiarism.png` uses academic/ethics imagery, and `0733-digestive.png` uses neutral non-graphic educational body imagery. Minor handwriting/OCR/Chinese drift appears on several cards; `0733-digestive.png` appears to omit the separate phrase row, and `0738-traverse.png` merges the phrase/example-1 area and omits the circled `1`. These passed hard checks and remain quality notes, not regeneration blockers.
 - Quality notes for `0699-0708`: several cards have minor generated handwriting/OCR/IPA or Chinese drift in small text, especially `0701-intrusion.png`, `0703-bronchitis.png`, `0704-cinematography.png`, `0705-slat.png`, `0706-thereby.png`, `0707-goggles.png`, and `0708-marvellous.png`. `0699-conquest.png` and `0701-intrusion.png` use symbolic/legal-safe imagery; `0703-bronchitis.png` uses neutral non-graphic medical imagery. These passed hard checks and remain quality notes, not regeneration blockers.
 - Quality notes for `0709-0718`: several cards have minor generated IPA/Chinese/lower-row handwriting or OCR drift in small text. `0717-cosmic.png` and `0718-detour.png` have visible lower-row label/spelling drift such as `sunonyms`, and `0718-detour.png` writes `bypass` like `bupass`. `0713-deficiency.png` uses neutral educational medical imagery. These passed hard checks and remain quality notes, not regeneration blockers.
 - Quality notes for `0719-0728`: several cards have minor generated handwriting/OCR/IPA or Chinese drift in small text. `0722-forgo.png` preserves the source-row mixed-language meaning; `0724-extinguisher.png` uses safety/training imagery without fire-setting instructions; `0727-spasmodic.png` uses neutral non-graphic medical/body-motion imagery. These passed hard checks and remain quality notes, not regeneration blockers.
