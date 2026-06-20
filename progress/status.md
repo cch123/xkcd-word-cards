@@ -3,8 +3,8 @@
 Updated: 2026-06-20
 
 - Source entries: 4026
-- Generated PNG cards ready in this upload: 854
-- Remaining cards: 3172
+- Generated PNG cards ready in this upload: 895
+- Remaining cards: 3131
 - Current model target: `gpt-image-2`
 - Image size: `1024x1536`
 - Prompt shards: 9
@@ -110,9 +110,12 @@ Started: 2026-06-19
 - `0819-0828`: completed with built-in image generation in subagent `019ee3af-971f-72a2-a883-069ead94246e`
 - `0829-0838`: completed with built-in image generation in this pass; validated as non-tiny 1024x1536 PNGs with unique batch hashes, checked against `cards/*.png` for duplicate hashes, and visually verified matching top titles
 - `0839-0848`: completed with built-in image generation in subagent `019ee3af-9826-7583-95b7-b08001884611`
-- `0849-0858`: assigned to fresh subagent `019ee3d0-667e-7570-9590-e69a539c2e74`
-- `0859-0868`: assigned to fresh subagent `019ee3d0-67a0-7920-a6f7-12dd1a8eab0e`
-- `0869-0878`: assigned to fresh subagent `019ee3d0-6cb0-7482-b58c-eba194ee4612`
+- `0849-0858`: completed with built-in image generation in subagent `019ee3d0-667e-7570-9590-e69a539c2e74`
+- `0859-0868`: completed with built-in image generation in subagent `019ee3d0-67a0-7920-a6f7-12dd1a8eab0e`
+- `0869-0878`: completed with built-in image generation in subagent `019ee3d0-6cb0-7482-b58c-eba194ee4612`
+- `0879-0888`: assigned to fresh subagent `019ee3e1-7584-7f22-ac0e-89d27391eb19`; partial outputs currently saved for `0879-0882`
+- `0889-0898`: assigned to fresh subagent `019ee3e1-7798-7db2-a97b-581172380d72`; partial outputs currently saved for `0889-0894`
+- `0899-0908`: assigned to fresh subagent `019ee3e1-7815-7931-9fe5-7152a3a89e9e`; partial outputs currently saved for `0899-0906`
 
 ## Quality Notes
 
@@ -234,6 +237,13 @@ Started: 2026-06-19
 - `0819-0828`: completed with built-in image generation; all ten requested PNGs were validated as non-tiny 1024x1536 files with unique batch hashes, no duplicate hashes against `cards/*.png`, and matching large top titles. `0825-agitation.png` uses neutral restless/civic/stirring imagery without self-harm or violence.
 - Quality notes for `0819-0828`: minor generated handwriting/OCR/IPA/Chinese drift appears in small text on several cards, especially `0820-clamour.png`, `0821-mould.png`, `0822-wastage.png`, `0823-flutter.png`, `0824-commotion.png`, `0825-agitation.png`, and `0826-astrology.png`; `0827-brass.png` has a slight generated tint in the brass-handle doodle. These passed hard checks and remain quality notes, not regeneration blockers.
 - Hard-check checkpoint for partial in-flight outputs `0849-0850`, `0859-0860`, and `0869-0871`: current PNGs are valid/non-duplicate and their large titles match the target filenames. Minor generated handwriting/OCR/IPA/label drift remains quality-only per the latest user instruction.
+- `0869-0878`: completed with built-in image generation; all ten requested PNGs were validated as non-tiny 1024x1536 files with unique batch hashes, no duplicate hashes against `cards/*.png`, and matching large top titles.
+- Quality notes for `0869-0878`: minor generated handwriting/OCR/IPA/Chinese drift appears in small text on several cards, especially `0873-impartial.png`, `0877-fabrication.png`, and `0878-consumerism.png`. These passed hard checks and remain quality notes, not regeneration blockers.
+- `0859-0868`: completed with built-in image generation; all ten requested PNGs were validated as non-tiny 1024x1536 files with unique batch hashes, no duplicate hashes against `cards/*.png`, and matching large top titles. `0859-epitomise.png` was white-margin normalized from a narrow built-in artifact.
+- Quality notes for `0859-0868`: minor generated handwriting/OCR/IPA/Chinese drift appears in small text on several cards, especially `0863-stint.png`, `0867-grunt.png`, and `0868-apace.png`. `0861-chink.png` uses only neutral crack/gap/weak-point imagery. These passed hard checks and remain quality notes, not regeneration blockers.
+- `0849-0858`: completed with built-in image generation; all ten requested PNGs were validated as non-tiny 1024x1536 files with unique batch hashes, no duplicate hashes against `cards/*.png`, and matching large top titles.
+- Quality notes for `0849-0858`: minor generated handwriting/OCR/IPA/Chinese drift appears in small text on several cards, especially `0851-doctorate.png`, `0854-hasty.png`, and `0858-odour.png`; `0857-superior.png` was regenerated once for a required row/icon structure omission before final validation.
+- Hard-check checkpoint for partial in-flight outputs `0879-0882`, `0889-0894`, and `0899-0906`: current PNGs are valid/non-duplicate 1024x1536 cards and their large titles match the target filenames. Minor generated handwriting/OCR/IPA/label drift remains quality-only per the latest user instruction.
 
 ## Generated Cards
 
