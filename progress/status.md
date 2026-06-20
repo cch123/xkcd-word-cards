@@ -3,8 +3,8 @@
 Updated: 2026-06-20
 
 - Source entries: 4026
-- Generated PNG cards ready in this upload: 791
-- Remaining cards: 3235
+- Generated PNG cards ready in this upload: 792
+- Remaining cards: 3234
 - Current model target: `gpt-image-2`
 - Image size: `1024x1536`
 - Prompt shards: 9
@@ -105,6 +105,12 @@ Started: 2026-06-19
 - `0769-0778`: assigned to fresh subagent `019ee366-038e-73a0-9758-0e96b2a8dc1a`
 - `0779-0788`: completed with built-in image generation; validated as non-tiny 1024x1536 PNGs with unique batch hashes, checked against `cards/*.png` for duplicate hashes, and visually verified matching top titles. `0785-defective.png` required one hard retry after a tool/server error produced no artifact.
 - `0789-0798`: completed with built-in image generation; validated as non-tiny 1024x1536 PNGs with unique batch hashes, checked against `cards/*.png` for duplicate hashes, and visually verified matching top titles
+- `0799-0808`: assigned to fresh subagent `019ee3af-9613-73c0-a990-492a14a85ba6`
+- `0809-0818`: assigned to fresh subagent `019ee3af-96a8-70e0-87ba-063227ec8cff`
+- `0819-0828`: assigned to fresh subagent `019ee3af-971f-72a2-a883-069ead94246e`
+- `0829-0838`: assigned to fresh subagent `019ee3af-97a8-71b3-91d2-53c3ad3013be`
+- `0839-0848`: assigned to fresh subagent `019ee3af-9826-7583-95b7-b08001884611`
+- `0774-0778`: recovery generation assigned to fresh subagent `019ee3b5-68e5-7980-871d-b44366e17f36`
 
 ## Quality Notes
 
@@ -213,6 +219,8 @@ Started: 2026-06-19
 - Quality notes for `0779-0788`: several cards have minor generated handwriting/OCR/IPA or Chinese drift in small text, especially `0780-resoluble.png`, `0782-honour.png`, `0783-ornamenter.png`, `0786-circulation.png`, `0787-cope.png`, and `0788-durable.png`. `0779-antidote.png` uses educational medical/lab-symbol imagery only with no dosage or treatment instructions, and `0787-cope.png` uses neutral support/problem-solving imagery.
 - Quality notes for `0739-0748`: several cards have minor generated handwriting/OCR/IPA or Chinese drift in small text, especially `0741-spasm.png`, `0744-apt.png`, `0747-habitat.png`, and `0748-lifelike.png`; `0741-spasm.png` uses neutral non-graphic body/medical imagery. These passed hard checks and remain quality notes, not regeneration blockers.
 - Quality notes for `0789-0798`: `0794-windscreen.png` has a generated `sunonyms` label typo; `0796-tangibly.png` has small Chinese example/usage wording drift. `0792-executioner.png` uses historical/legal symbolic imagery only, and `0797-psychiatric.png` uses respectful neutral mental-health care imagery. These passed hard checks and remain quality notes, not regeneration blockers.
+- `0769-0773` were partially generated in this pass with built-in image generation: `0769-intensify.png`, `0770-underminer.png`, `0771-undermine.png`, `0772-improvisation.png`, and `0773-insulation.png` were saved; `0774-mishandle.png` and `0775-scanty.png` hard-failed with unrelated/non-card outputs, so no PNG was saved for those targets. `0776-0778` were not attempted in this pass.
+- Quality notes for `0769-0773`: minor generated handwriting/OCR/IPA or Chinese drift appears on several cards; `0773-insulation.png` merges the phrase/example-1 area and omits the circled `1` example icon. `0770-underminer.png` and `0771-undermine.png` use symbolic workplace/structure imagery as requested.
 
 ## Generated Cards
 
