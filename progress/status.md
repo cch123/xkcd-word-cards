@@ -3,8 +3,8 @@
 Updated: 2026-06-20
 
 - Source entries: 4026
-- Generated PNG cards ready in this upload: 818
-- Remaining cards: 3208
+- Generated PNG cards ready in this upload: 837
+- Remaining cards: 3189
 - Current model target: `gpt-image-2`
 - Image size: `1024x1536`
 - Prompt shards: 9
@@ -102,7 +102,7 @@ Started: 2026-06-19
 - `0739-0748`: completed with built-in image generation; `0743-kindred.png` required one hard-failure retry after a tool/server error produced no artifact. All ten were validated as non-tiny 1024x1536 PNGs with unique batch hashes, checked against `cards/*.png` for duplicate hashes, and visually verified matching top titles
 - `0749-0758`: completed with built-in image generation in this pass; validated as non-tiny 1024x1536 PNGs with unique batch hashes, checked against `cards/*.png` for duplicate hashes, and visually verified matching top titles
 - `0759-0768`: completed with built-in image generation in this pass; validated as non-tiny 1024x1536 PNGs with unique batch hashes, checked against `cards/*.png` for duplicate hashes, and visually verified matching top titles
-- `0769-0778`: assigned to fresh subagent `019ee366-038e-73a0-9758-0e96b2a8dc1a`
+- `0769-0778`: completed after recovery; `0769-0773` were generated in the earlier partial pass, and `0774-0778` were recovered with built-in image generation. The recovered files were validated as non-tiny 1024x1536 PNGs with unique batch hashes, no `cards/*.png` duplicate hashes, and matching top titles.
 - `0779-0788`: completed with built-in image generation; validated as non-tiny 1024x1536 PNGs with unique batch hashes, checked against `cards/*.png` for duplicate hashes, and visually verified matching top titles. `0785-defective.png` required one hard retry after a tool/server error produced no artifact.
 - `0789-0798`: completed with built-in image generation; validated as non-tiny 1024x1536 PNGs with unique batch hashes, checked against `cards/*.png` for duplicate hashes, and visually verified matching top titles
 - `0799-0808`: assigned to fresh subagent `019ee3af-9613-73c0-a990-492a14a85ba6`
@@ -110,7 +110,6 @@ Started: 2026-06-19
 - `0819-0828`: assigned to fresh subagent `019ee3af-971f-72a2-a883-069ead94246e`
 - `0829-0838`: assigned to fresh subagent `019ee3af-97a8-71b3-91d2-53c3ad3013be`
 - `0839-0848`: assigned to fresh subagent `019ee3af-9826-7583-95b7-b08001884611`
-- `0774-0778`: recovery generation assigned to fresh subagent `019ee3b5-68e5-7980-871d-b44366e17f36`
 
 ## Quality Notes
 
@@ -221,6 +220,8 @@ Started: 2026-06-19
 - Quality notes for `0789-0798`: `0794-windscreen.png` has a generated `sunonyms` label typo; `0796-tangibly.png` has small Chinese example/usage wording drift. `0792-executioner.png` uses historical/legal symbolic imagery only, and `0797-psychiatric.png` uses respectful neutral mental-health care imagery. These passed hard checks and remain quality notes, not regeneration blockers.
 - `0769-0773` were partially generated in this pass with built-in image generation: `0769-intensify.png`, `0770-underminer.png`, `0771-undermine.png`, `0772-improvisation.png`, and `0773-insulation.png` were saved; `0774-mishandle.png` and `0775-scanty.png` hard-failed with unrelated/non-card outputs, so no PNG was saved for those targets. `0776-0778` were not attempted in this pass.
 - Quality notes for `0769-0773`: minor generated handwriting/OCR/IPA or Chinese drift appears on several cards; `0773-insulation.png` merges the phrase/example-1 area and omits the circled `1` example icon. `0770-underminer.png` and `0771-undermine.png` use symbolic workplace/structure imagery as requested.
+- Quality notes for `0774-0778`: minor generated handwriting/OCR/IPA or Chinese drift appears in small text. `0778-turret.png` uses neutral castle/architecture turret imagery with no weapon-operation visuals. These passed hard checks and remain quality notes, not regeneration blockers.
+- Hard-check checkpoint for partial in-flight outputs `0804`, `0805`, `0814-0817`, `0824-0826`, `0834-0835`, and `0845-0847`: current PNGs are valid/non-duplicate and their large titles match the target filenames. Minor generated handwriting/OCR/IPA/label drift remains quality-only per the latest user instruction.
 
 ## Generated Cards
 
