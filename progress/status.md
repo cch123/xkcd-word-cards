@@ -3,8 +3,8 @@
 Updated: 2026-06-20
 
 - Source entries: 4026
-- Generated PNG cards ready in this upload: 792
-- Remaining cards: 3234
+- Generated PNG cards ready in this upload: 818
+- Remaining cards: 3208
 - Current model target: `gpt-image-2`
 - Image size: `1024x1536`
 - Prompt shards: 9
