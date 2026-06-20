@@ -3,8 +3,8 @@
 Updated: 2026-06-20
 
 - Source entries: 4026
-- Generated PNG cards ready in this upload: 895
-- Remaining cards: 3131
+- Generated PNG cards ready in this upload: 945
+- Remaining cards: 3081
 - Current model target: `gpt-image-2`
 - Image size: `1024x1536`
 - Prompt shards: 9
@@ -113,9 +113,15 @@ Started: 2026-06-19
 - `0849-0858`: completed with built-in image generation in subagent `019ee3d0-667e-7570-9590-e69a539c2e74`
 - `0859-0868`: completed with built-in image generation in subagent `019ee3d0-67a0-7920-a6f7-12dd1a8eab0e`
 - `0869-0878`: completed with built-in image generation in subagent `019ee3d0-6cb0-7482-b58c-eba194ee4612`
-- `0879-0888`: assigned to fresh subagent `019ee3e1-7584-7f22-ac0e-89d27391eb19`; partial outputs currently saved for `0879-0882`
-- `0889-0898`: assigned to fresh subagent `019ee3e1-7798-7db2-a97b-581172380d72`; partial outputs currently saved for `0889-0894`
-- `0899-0908`: assigned to fresh subagent `019ee3e1-7815-7931-9fe5-7152a3a89e9e`; partial outputs currently saved for `0899-0906`
+- `0879-0888`: completed after earlier partial outputs for `0879-0882` and fresh subagent `019ee404-e113-74f2-835e-1363c9151b43` for `0883-0888`
+- `0889-0898`: completed after earlier partial outputs for `0889-0894` and fresh subagent `019ee404-e176-72a0-ae01-fdba50a2ca2b` for `0895-0898`
+- `0899-0908`: completed after earlier partial outputs for `0899-0906` and fresh subagent `019ee404-e771-7532-bd59-260a9568897c` for `0907-0908`
+- `0883-0888`: completed with built-in image generation in subagent `019ee404-e113-74f2-835e-1363c9151b43`
+- `0895-0898`: completed with built-in image generation in subagent `019ee404-e176-72a0-ae01-fdba50a2ca2b`
+- `0907-0916`: completed with built-in image generation in subagent `019ee404-e771-7532-bd59-260a9568897c`
+- `0917-0926`: completed with built-in image generation in subagent `019ee404-e8a7-7513-a2f8-7b39d792cf63`
+- `0927-0936`: completed with built-in image generation in subagent `019ee404-e8fa-70c1-a150-c7007e1dcbc2`
+- `0937-0946`: completed with built-in image generation in subagent `019ee404-e94b-7cd3-8e0b-040bcfb38603`
 
 ## Quality Notes
 
@@ -244,6 +250,8 @@ Started: 2026-06-19
 - `0849-0858`: completed with built-in image generation; all ten requested PNGs were validated as non-tiny 1024x1536 files with unique batch hashes, no duplicate hashes against `cards/*.png`, and matching large top titles.
 - Quality notes for `0849-0858`: minor generated handwriting/OCR/IPA/Chinese drift appears in small text on several cards, especially `0851-doctorate.png`, `0854-hasty.png`, and `0858-odour.png`; `0857-superior.png` was regenerated once for a required row/icon structure omission before final validation.
 - Hard-check checkpoint for partial in-flight outputs `0879-0882`, `0889-0894`, and `0899-0906`: current PNGs are valid/non-duplicate 1024x1536 cards and their large titles match the target filenames. Minor generated handwriting/OCR/IPA/label drift remains quality-only per the latest user instruction.
+- `0883-0888`, `0895-0898`, and `0907-0946`: completed with built-in image generation; the 50 newly staged PNGs were validated as non-tiny 1024x1536 cards with no duplicate hashes against `cards/*.png`, and visually verified with large top titles matching their target filenames.
+- Quality notes for this checkpoint: minor generated handwriting/OCR/IPA/Chinese drift appears in small text on several cards, especially `0884-delve.png`, `0897-underlie.png`, `0924-worthwhile.png`, and `0926-perplex.png`; these passed hard checks and remain quality notes, not regeneration blockers. `0911-urine.png` uses neutral medical-test imagery, `0921-cocaine.png` uses legal/medical warning imagery without drug-use or preparation detail, and `0940-inflict.png`/`0942-liquor.png` use neutral educational/legal/social imagery.
 
 ## Generated Cards
 
