@@ -3,8 +3,8 @@
 Updated: 2026-06-20
 
 - Source entries: 4026
-- Generated PNG cards ready in this upload: 647
-- Remaining cards: 3379
+- Generated PNG cards ready in this upload: 650
+- Remaining cards: 3376
 - Current model target: `gpt-image-2`
 - Image size: `1024x1536`
 - Prompt shards: 9
@@ -88,7 +88,7 @@ Started: 2026-06-19
 - `0599-0608`: completed in the current pass with built-in image generation; all ten were validated as 1024x1536 PNGs with unique hashes and visually verified matching top titles
 - `0609-0618`: assigned to fresh subagent `019ee278-8a02-7323-862f-764e04ba4fde`
 - `0619-0628`: completed in this pass with built-in image generation; validated as 1024x1536 PNGs with unique hashes, checked against `cards/*.png` for duplicate hashes, and visually verified matching top titles
-- `0629-0638`: assigned to fresh subagent `019ee27c-6bfc-7e83-b579-56299d2f04a9`
+- `0629-0638`: completed with built-in image generation; validated as 1024x1536 PNGs with unique hashes, no `cards/*.png` duplicate hashes, and visually verified matching top titles
 - `0639-0648`: completed with built-in image generation; validated as 1024x1536 PNGs with unique hashes, no `cards/*.png` duplicate hashes, and visually verified matching top titles
 - `0649-0658`: assigned to fresh subagent `019ee290-c35c-7d20-b896-27066a8957b2`
 - `0659-0668`: assigned to fresh subagent `019ee292-26a2-7e23-8142-8690dfd9ae09`
@@ -177,6 +177,7 @@ Started: 2026-06-19
 - `0579-0588` were generated, validated as 1024x1536 PNGs with unique hashes, checked against `cards/*.png` for duplicate hashes, and visually verified matching top titles.
 - Quality notes for `0579-0588`: `0583-sporadically.png`, `0584-forthcoming.png`, `0585-acclimatise.png`, `0587-daunting.png`, and `0588-daunt.png` have minor generated handwriting/OCR/Chinese drift in small text. `0579-impotent.png` uses educational non-explicit medical imagery, and `0582-incendiary.png` uses symbolic debate/warning/evidence imagery only. These passed hard checks and remain quality notes, not regeneration blockers.
 - Quality notes for `0619-0628`: `0622-abase.png` has minor example-row text drift; `0625-degrade.png` and `0627-matchless.png` have minor Chinese text drift. These passed hard checks and remain quality notes, not regeneration blockers.
+- Quality notes for `0629-0638`: `0634-splatter.png` has minor generated Chinese/header handwriting/OCR drift. `0631-foetus.png` and `0637-sinew.png` use neutral educational anatomy/scan imagery; `0638-illegality.png` uses legal/court/sign imagery only. These passed hard checks and remain quality notes, not regeneration blockers.
 - `0599-0608` were generated, validated as 1024x1536 PNGs with unique hashes, checked against `cards/*.png` for duplicate hashes, and visually verified matching top titles.
 - Quality notes for `0599-0608`: several cards have minor generated handwriting/OCR/IPA or Chinese drift in small text, especially `0600-facility.png`, `0602-surmount.png`, `0605-fierce.png`, `0606-sift.png`, and `0607-gullibly.png`; `0604-bistro.png` includes small decorative chalkboard/menu text. These passed hard checks and remain quality notes, not regeneration blockers.
 - `0639-0648` were generated with built-in image generation, validated as 1024x1536 PNGs with unique hashes, checked against `cards/*.png` for duplicate hashes, and visually verified matching top titles.
