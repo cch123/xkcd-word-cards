@@ -3,8 +3,8 @@
 Updated: 2026-06-20
 
 - Source entries: 4026
-- Generated PNG cards ready in this upload: 779
-- Remaining cards: 3247
+- Generated PNG cards ready in this upload: 787
+- Remaining cards: 3239
 - Current model target: `gpt-image-2`
 - Image size: `1024x1536`
 - Prompt shards: 9
@@ -99,12 +99,12 @@ Started: 2026-06-19
 - `0709-0718`: completed with built-in image generation in subagent `019ee337-8887-7430-8e57-0c29dd888993`; validated as 1024x1536 PNGs with unique batch hashes, checked against `cards/*.png` for duplicate hashes, and visually verified matching top titles
 - `0719-0728`: completed with built-in image generation in subagent `019ee337-88fb-7fa0-9d45-bd1bb78f87bb`; validated as 1024x1536 PNGs with unique batch hashes, checked against `cards/*.png` for duplicate hashes, and visually verified matching top titles
 - `0729-0738`: completed with built-in image generation in subagent `019ee337-8979-7fc0-832c-e9a91f53a894`; validated as 1024x1536 PNGs with unique batch hashes, checked against `cards/*.png` for duplicate hashes, and visually verified matching top titles
-- `0739-0748`: assigned to fresh subagent `019ee366-0255-7ba3-bf48-d4a72f903e1b`
+- `0739-0748`: completed with built-in image generation; `0743-kindred.png` required one hard-failure retry after a tool/server error produced no artifact. All ten were validated as non-tiny 1024x1536 PNGs with unique batch hashes, checked against `cards/*.png` for duplicate hashes, and visually verified matching top titles
 - `0749-0758`: assigned to fresh subagent `019ee366-02bc-76e1-8187-e97d5b92d63b`
 - `0759-0768`: assigned to fresh subagent `019ee366-0325-7783-abc6-8fd924e13293`
 - `0769-0778`: assigned to fresh subagent `019ee366-038e-73a0-9758-0e96b2a8dc1a`
 - `0779-0788`: assigned to fresh subagent `019ee366-0405-7cb1-8026-1d60073d677c`
-- `0789-0798`: assigned to fresh subagent `019ee366-047c-7653-8835-66ce8baf7e17`
+- `0789-0798`: completed with built-in image generation; validated as non-tiny 1024x1536 PNGs with unique batch hashes, checked against `cards/*.png` for duplicate hashes, and visually verified matching top titles
 
 ## Quality Notes
 
@@ -208,6 +208,8 @@ Started: 2026-06-19
 - Quality notes for `0719-0728`: several cards have minor generated handwriting/OCR/IPA or Chinese drift in small text. `0722-forgo.png` preserves the source-row mixed-language meaning; `0724-extinguisher.png` uses safety/training imagery without fire-setting instructions; `0727-spasmodic.png` uses neutral non-graphic medical/body-motion imagery. These passed hard checks and remain quality notes, not regeneration blockers.
 - `0689-0698` were generated with built-in image generation, validated as non-tiny 1024x1536 PNGs with unique batch hashes, checked against `cards/*.png` for duplicate hashes, and visually verified matching top titles.
 - Quality notes for `0689-0698`: several cards have minor generated handwriting/OCR/IPA or Chinese drift in small text, especially `0690-moderation.png`, `0692-kidney.png`, `0694-tropospheric.png`, `0695-dissimilar.png`, `0697-dwell.png`, and `0698-congregate.png`. `0692-kidney.png` uses neutral non-graphic educational anatomy/medical imagery. These passed hard checks and remain quality notes, not regeneration blockers.
+- Quality notes for `0739-0748`: several cards have minor generated handwriting/OCR/IPA or Chinese drift in small text, especially `0741-spasm.png`, `0744-apt.png`, `0747-habitat.png`, and `0748-lifelike.png`; `0741-spasm.png` uses neutral non-graphic body/medical imagery. These passed hard checks and remain quality notes, not regeneration blockers.
+- Quality notes for `0789-0798`: `0794-windscreen.png` has a generated `sunonyms` label typo; `0796-tangibly.png` has small Chinese example/usage wording drift. `0792-executioner.png` uses historical/legal symbolic imagery only, and `0797-psychiatric.png` uses respectful neutral mental-health care imagery. These passed hard checks and remain quality notes, not regeneration blockers.
 
 ## Generated Cards
 
