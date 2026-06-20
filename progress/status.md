@@ -3,8 +3,8 @@
 Updated: 2026-06-20
 
 - Source entries: 4026
-- Generated PNG cards ready in this upload: 659
-- Remaining cards: 3367
+- Generated PNG cards ready in this upload: 677
+- Remaining cards: 3349
 - Current model target: `gpt-image-2`
 - Image size: `1024x1536`
 - Prompt shards: 9
@@ -90,9 +90,15 @@ Started: 2026-06-19
 - `0619-0628`: completed in this pass with built-in image generation; validated as 1024x1536 PNGs with unique hashes, checked against `cards/*.png` for duplicate hashes, and visually verified matching top titles
 - `0629-0638`: completed with built-in image generation; validated as 1024x1536 PNGs with unique hashes, no `cards/*.png` duplicate hashes, and visually verified matching top titles
 - `0639-0648`: completed with built-in image generation; validated as 1024x1536 PNGs with unique hashes, no `cards/*.png` duplicate hashes, and visually verified matching top titles
-- `0649-0658`: assigned to fresh subagent `019ee290-c35c-7d20-b896-27066a8957b2`
-- `0659-0668`: assigned to fresh subagent `019ee292-26a2-7e23-8142-8690dfd9ae09`
-- `0669-0678`: assigned to fresh subagent `019ee299-c379-7a91-9e07-afab01560d62`
+- `0649-0658`: completed with built-in image generation; validated as 1024x1536 PNGs with unique hashes, no `cards/*.png` duplicate hashes, and visually verified matching top titles
+- `0659-0668`: completed in this pass with built-in image generation; validated as 1024x1536 PNGs with unique hashes, checked against `cards/*.png` for duplicate hashes, and visually verified matching top titles
+- `0669-0678`: completed with built-in image generation; validated as 1024x1536 PNGs with unique hashes, checked against `cards/*.png` for duplicate hashes, and visually verified matching top titles
+- `0679-0688`: assigned to fresh subagent `019ee337-8702-7681-a3ab-ce33e2e1b2f6`
+- `0689-0698`: assigned to fresh subagent `019ee337-876c-7073-a8a2-3e8e134e8cf1`
+- `0699-0708`: assigned to fresh subagent `019ee337-8800-7f72-ad38-32aafd2948de`
+- `0709-0718`: assigned to fresh subagent `019ee337-8887-7430-8e57-0c29dd888993`
+- `0719-0728`: assigned to fresh subagent `019ee337-88fb-7fa0-9d45-bd1bb78f87bb`
+- `0729-0738`: assigned to fresh subagent `019ee337-8979-7fc0-832c-e9a91f53a894`
 
 ## Quality Notes
 
@@ -105,6 +111,8 @@ Started: 2026-06-19
 - `scripts/verify-gpt-image-cards.mjs` now reports duplicate PNG hashes as a quality failure.
 - Subagents were additionally instructed not to run any git commands. Main-agent validation, commits, and pushes should be handled centrally.
 - User instruction update: do not repeatedly regenerate images for layout-only issues. Regenerate only for hard failures: invalid/tiny/wrong-dimension PNG, wrong title/word mismatch, cross-copy, duplicate hash, blank image, or non-card output. Layout/OCR imperfections should be recorded as quality notes instead.
+- `0649-0658` passed hard checks and title-match verification. Minor handwriting/OCR drift is visible on some cards, especially `0650-goodwill.png`, `0653-fickle.png`, `0655-internist.png`, and `0656-accreditation.png`.
+- `0657-shrinkage.png` appears to omit the separate phrase row and compress example 1 into that row, with the circled `1` example icon missing. This is a layout quality note, not a regeneration blocker.
 - `0165-handicapped.png` correction was cancelled as a layout-only retry unless a worker had already produced a replacement before the cancellation.
 - `0165-handicapped.png` latest saved replacement passes hard checks and title-match, but still lacks the phrase row. This remains a quality note, not a regeneration blocker.
 - `0145-spacious.png` may omit the phrase row; `0146-baleful.png` has a minor OCR typo in a phrase. These are quality notes, not regeneration blockers.
@@ -185,6 +193,8 @@ Started: 2026-06-19
 - Quality notes for `0639-0648`: `0643-catastrophic.png`, `0644-proliferation.png`, `0645-microcosm.png`, and `0647-burglary.png` have minor generated handwriting/OCR/IPA or roots-panel drift in small text. `0642-catastrophe.png` and `0643-catastrophic.png` use symbolic, non-graphic risk imagery; `0647-burglary.png` uses legal/security/reporting imagery only. These passed hard checks and remain quality notes, not regeneration blockers.
 - `0609-0618` were generated with built-in image generation, validated as 1024x1536 PNGs with unique hashes, checked against `cards/*.png` for duplicate hashes, and visually verified matching top titles.
 - Quality notes for `0609-0618`: `0610-niggle.png`, `0611-discerning.png`, `0612-fallow.png`, `0613-settlement.png`, and `0616-embezzlement.png` have minor generated handwriting/OCR/IPA or Chinese drift in small text; `0615-acrobatic.png` and `0617-unquote.png` omit or shift the separate phrase row. `0616-embezzlement.png` uses educational office/audit/legal imagery only. These passed hard checks and remain quality notes, not regeneration blockers.
+- Quality notes for `0659-0668`: several cards have minor generated handwriting/OCR/IPA or Chinese drift in small text, especially `0660-knotty.png`, `0663-depletion.png`, `0664-vitality.png`, `0665-toxin.png`, `0666-tome.png`, and `0667-cloakroom.png`. `0662-splint.png` and `0668-vet.png` use neutral non-graphic medical/animal-clinic imagery; `0665-toxin.png` uses educational warning-label/lab-symbol imagery only. These passed hard checks and remain quality notes, not regeneration blockers.
+- Quality notes for `0669-0678`: `0673-identifiable.png` and `0675-fertilise.png` have minor generated IPA/Chinese/roots handwriting/OCR drift in small text; `0678-coarse.png` appears to omit the separate phrase row. These passed hard checks and remain quality notes, not regeneration blockers.
 
 ## Generated Cards
 
