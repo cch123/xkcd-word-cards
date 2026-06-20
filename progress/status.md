@@ -3,8 +3,8 @@
 Updated: 2026-06-20
 
 - Source entries: 4026
-- Generated PNG cards ready in this upload: 592
-- Remaining cards: 3434
+- Generated PNG cards ready in this upload: 602
+- Remaining cards: 3424
 - Current model target: `gpt-image-2`
 - Image size: `1024x1536`
 - Prompt shards: 9
@@ -76,7 +76,7 @@ Started: 2026-06-19
 - `0449-0458`: completed by subagent `019ee145-559e-7de1-acdd-63f1f88e57bb`; `0455-artefact.png` was retried once after a built-in image-generation tool error produced no artifact
 - `0469-0478`: completed by subagent `019ee145-5403-7f13-8873-e3b13e7f032e`
 - `0489-0498`: completed by subagent `019ee145-5403-7f13-8873-e3b13e7f032e`
-- `0499-0508`: assigned to subagent `019edff7-6120-71c1-9f78-efb303bc3c7d`
+- `0499-0508`: completed by subagent `019edff7-6120-71c1-9f78-efb303bc3c7d`
 - `0509-0518`: completed by subagent `019ee145-559e-7de1-acdd-63f1f88e57bb`
 - `0519-0528`: completed by fresh subagent `019ee22d-aca3-7cd1-8015-c594a54ecfbd`
 - `0529-0538`: completed by subagent `019ee145-5403-7f13-8873-e3b13e7f032e`
@@ -87,6 +87,8 @@ Started: 2026-06-19
 - `0589-0598`: assigned to fresh subagent `019ee264-3109-7dd2-a31e-445f1d02dc4d`
 - `0599-0608`: assigned to fresh subagent `019ee276-11f1-7020-91a6-ac92d58a8d13`
 - `0609-0618`: assigned to fresh subagent `019ee278-8a02-7323-862f-764e04ba4fde`
+- `0619-0628`: assigned to fresh subagent `019ee279-c750-7262-890b-a53f2a71c653`
+- `0629-0638`: assigned to fresh subagent `019ee27c-6bfc-7e83-b579-56299d2f04a9`
 
 ## Quality Notes
 
@@ -153,6 +155,8 @@ Started: 2026-06-19
 - `0401-cricket.png` has minor example-2 text drift; `0403-competent.png` has minor antonyms-row spelling drift; `0404-consequential.png` has minor example-row text drift; `0405-luxuriant.png` appears to omit the separate phrase row. These passed hard checks and remain quality notes, not regeneration blockers.
 - `0490-contrary.png`, `0492-merchandising.png`, `0495-cavort.png`, and `0496-exuberant.png` have minor handwriting/OCR/text drift. `0497-engross.png` appears to merge the phrase/example-1 area and may omit the circled `1` icon. These passed hard checks and remain quality notes, not regeneration blockers.
 - `0489-0498` were validated as 1024x1536 PNGs with unique hashes and visually verified matching top titles.
+- `0499-0508` were generated with built-in image generation, validated as 1024x1536 PNGs with unique hashes, and visually verified matching top titles.
+- Quality notes for `0499-0508`: `0499-hiccup.png` and `0504-disillusion.png` have minor generated handwriting/IPA/Chinese drift in small text. These passed hard checks and remain quality notes, not regeneration blockers.
 - `0509-0518` were generated with built-in image generation, validated as 1024x1536 PNGs with unique hashes, and visually verified matching top titles. `0509-sunburn.png` uses neutral educational body/skin imagery.
 - Quality notes for `0509-0518`: `0512-exhilaration.png` appears to omit the separate phrase row and has minor OCR/Chinese drift; `0514-meek.png` and `0517-amplify.png` have minor generated handwriting/OCR/Chinese drift in small text. These passed hard checks and remain quality notes, not regeneration blockers.
 - `0519-0528` were generated, validated as 1024x1536 PNGs with unique hashes, and visually verified matching top titles.
